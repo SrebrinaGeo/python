@@ -1,0 +1,21 @@
+import  math
+
+guests_count = int(input())
+budget = int(input())
+
+cakes_count = math.ceil(guests_count / 3)
+eggs_count = guests_count * 2
+price_cakes = cakes_count * 4
+price_eggs = eggs_count * 0.45
+
+total_sum = price_cakes + price_eggs
+
+if total_sum <= budget:
+    diff = budget - total_sum
+    print(f"Lyubo bought {cakes_count} Easter bread and {eggs_count} eggs.")
+    print(f"He has {diff:.2f} lv. left.")
+elif total_sum > budget:
+    diff = total_sum - budget
+    print(f"Lyubo doesn't have enough money.")
+    print(f"He needs {diff:.2f} lv. more.")
+
