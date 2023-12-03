@@ -1,0 +1,12 @@
+cakes_count = int(input())
+eggs_packs = int(input())
+cookies_kgs = int(input())
+
+sum_cakes = cakes_count * 3.2
+sum_eggs = eggs_packs * 4.35
+sum_cookies = cookies_kgs * 5.4
+paint = eggs_packs * 1.8
+
+total_sum = sum_cookies + sum_eggs + sum_cakes + paint
+
+print(f'{total_sum:.2f}')
