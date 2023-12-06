@@ -1,0 +1,17 @@
+import math
+
+price_tennis_rocket = float(input())
+amount_rockets = int(input())
+amount_sneakers = int(input())
+
+all_rockets_price = price_tennis_rocket * amount_rockets
+price_sneakers = (price_tennis_rocket / 6) * amount_sneakers
+other_equip = (all_rockets_price + price_sneakers) * 0.2
+
+all_equip_sum = all_rockets_price + price_sneakers + other_equip
+
+djokovic_price = math.floor(all_equip_sum / 8)
+sponsors_price = math.ceil(all_equip_sum * 7 / 8)
+
+print(f'Price to be paid by Djokovic {djokovic_price}')
+print(f'Price to be paid by sponsors {sponsors_price}')
