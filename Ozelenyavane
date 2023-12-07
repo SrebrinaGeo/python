@@ -1,0 +1,8 @@
+square_meters = float(input())
+
+cena_za_dvor = square_meters * 7.61
+otstapka = 0.18 * cena_za_dvor
+kraina_suma = cena_za_dvor - otstapka
+
+print(f"The final price is: {kraina_suma} lv."
+f"The discount is: {otstapka} lv.")
