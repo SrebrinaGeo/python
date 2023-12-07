@@ -1,0 +1,16 @@
+pen_packages = int(input())
+markers_packages = int(input())
+detergent_liters = int(input())
+discount = int(input())
+
+pens_sum = pen_packages * 5.80
+markers_sum = markers_packages * 7.20
+det_sum = detergent_liters * 1.20
+
+sum = pens_sum + markers_sum + det_sum
+
+discoun_lv = sum * (discount / 100)
+
+final_sum = sum - discoun_lv
+
+print(final_sum)
