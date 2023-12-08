@@ -1,0 +1,12 @@
+longitude = int(input())
+width = int(input())
+height = int(input())
+percentage_sand = float(input())
+
+volume_tank = longitude * width * height
+total_liters = volume_tank / 1000
+accessories_volume = total_liters * (percentage_sand / 100)
+
+result = total_liters - accessories_volume
+
+print(result)
