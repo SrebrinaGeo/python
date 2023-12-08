@@ -1,0 +1,10 @@
+tax_basketball = int(input())
+
+price_sneakers = tax_basketball * 0.6
+price_suite = price_sneakers * 0.8
+price_ball = price_suite / 4
+price_accessories = price_ball / 5
+
+final_sum = tax_basketball + price_sneakers + price_suite + price_ball + price_accessories
+
+print(final_sum)
