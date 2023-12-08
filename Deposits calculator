@@ -1,0 +1,9 @@
+deposit_sum = float(input())
+months_deposit = int(input())
+percentage = float(input())
+
+interest_year = deposit_sum * (percentage / 100)
+interest_month = interest_year / 12
+final_sum = deposit_sum + (months_deposit * interest_month)
+
+print(final_sum)
