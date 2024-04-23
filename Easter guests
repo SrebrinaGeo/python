@@ -18,4 +18,3 @@ elif total_sum > budget:
     diff = total_sum - budget
     print(f"Lyubo doesn't have enough money.")
     print(f"He needs {diff:.2f} lv. more.")
-
