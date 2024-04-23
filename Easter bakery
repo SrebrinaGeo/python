@@ -12,5 +12,3 @@ price_yeast = ((flour_price_kg * 0.75) * 0.2) * yeast_packs
 total_sum = price_sugar + price_yeast + price_eggs + price_flour
 
 print(f'{total_sum:.2f}')
-
-
